@@ -1,4 +1,5 @@
 import message from './message';
+import './index.css';
 
 const app = {};
 
