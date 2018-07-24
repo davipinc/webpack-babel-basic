@@ -1,5 +1,7 @@
 
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 require("babel-register");
 
 const config = {
@@ -14,6 +16,9 @@ const config = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
   },
+  plugins: [
+    new HtmlWebpackPlugin()
+  ],  
   // Loaders
   module: {
     rules : [
