@@ -22,5 +22,14 @@
   },
   "dependencies": {
     "babel-loader": "^7.1.5"
+  },
+  "babel": {
+    "presets": [
+      ["env", {
+        "targets": {
+          "browsers": ["last 5 versions", "safari >= 7"]
+        }
+      }]
+    ]
   }
 }
